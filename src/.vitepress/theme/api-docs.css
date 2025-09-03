@@ -1,0 +1,173 @@
+.route {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  margin: 16px 0;
+  background-color: var(--vp-c-bg-soft);
+  border-radius: 8px;
+  font-family: var(--vp-font-family-mono);
+}
+
+.route-method {
+  padding: 4px 8px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+/* HTTP 方法的颜色定义 */
+.route-method {
+  background-color: var(--vp-c-green-dimm-2);
+  color: var(--vp-c-green-1);
+}
+
+/* 针对不同 HTTP 方法的颜色变体 */
+.route-method[data-method="get"] {
+  background-color: var(--vp-c-green-dimm-2);
+  color: var(--vp-c-green-1);
+}
+
+.route-method[data-method="post"] {
+  background-color: var(--vp-c-yellow-dimm-2);
+  color: var(--vp-c-yellow-1);
+}
+
+.route-method[data-method="put"] {
+  background-color: var(--vp-c-blue-dimm-2);
+  color: var(--vp-c-blue-1);
+}
+
+.route-method[data-method="delete"] {
+  background-color: var(--vp-c-red-dimm-2);
+  color: var(--vp-c-red-1);
+}
+
+.route-path {
+  font-size: 14px;
+  color: var(--vp-c-text-1);
+  padding: 4px 0;
+}
+
+/* 响应式调整 */
+@media (max-width: 640px) {
+  .route {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 12px;
+  }
+}
+
+.route {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  margin: 16px 0;
+  background-color: var(--vp-c-bg-soft);
+  border-radius: 8px;
+  font-family: var(--vp-font-family-mono);
+}
+
+.route-method {
+  padding: 4px 8px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+/* HTTP 方法的颜色定义 */
+.route-method {
+  background-color: var(--vp-c-green-dimm-2);
+  color: var(--vp-c-green-1);
+}
+
+/* 针对不同 HTTP 方法的颜色变体 */
+.route-method[data-method="get"] {
+  background-color: var(--vp-c-green-dimm-2);
+  color: var(--vp-c-green-1);
+}
+
+.route-method[data-method="post"] {
+  background-color: var(--vp-c-yellow-dimm-2);
+  color: var(--vp-c-yellow-1);
+}
+
+.route-method[data-method="put"] {
+  background-color: var(--vp-c-blue-dimm-2);
+  color: var(--vp-c-blue-1);
+}
+
+.route-method[data-method="delete"] {
+  background-color: var(--vp-c-red-dimm-2);
+  color: var(--vp-c-red-1);
+}
+
+.route-path {
+  font-size: 14px;
+  color: var(--vp-c-text-1);
+  padding: 4px 0;
+}
+
+/* 响应式调整 */
+@media (max-width: 640px) {
+  .route {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 12px;
+  }
+}
+
+/* 类型标签样式 */
+.type-string,
+.type-integer,
+.type-boolean,
+.type-array,
+.type-object {
+  display: inline-block;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 4px;
+  font-family: var(--vp-font-family-mono);
+  background-color: var(--vp-c-gray-dimm-2);
+  color: var(--vp-c-text-2);
+}
+
+/* 不同类型的颜色变体 */
+.type-string {
+  background-color: var(--vp-c-green-dimm-2);
+  color: var(--vp-c-green-1);
+}
+
+.type-integer {
+  background-color: var(--vp-c-yellow-dimm-2);
+  color: var(--vp-c-yellow-1);
+}
+
+.type-boolean {
+  background-color: var(--vp-c-blue-dimm-2);
+  color: var(--vp-c-blue-1);
+}
+
+.type-array {
+  background-color: var(--vp-c-purple-dimm-2);
+  color: var(--vp-c-purple-1);
+}
+
+.type-object {
+  background-color: var(--vp-c-indigo-dimm-2);
+  color: var(--vp-c-indigo-1);
+}
+
+/* 必填参数标记 */
+.required::before {
+  content: "*";
+  color: var(--vp-c-red-1);
+  margin-right: 4px;
+  font-weight: bold;
+}
