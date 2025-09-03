@@ -1,5 +1,12 @@
 import { defineConfig } from "vitepress";
 
+const changelog = [
+  {
+    text: "v1.0.0",
+    link: "/changelog/v1.0.0",
+  },
+];
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "白羊座 Aries",
@@ -39,10 +46,34 @@ export default defineConfig({
         {
           text: "镜像",
           link: "/api/image/create-image",
-        }
-      ]
+        },
+        {
+          text: "存储卷",
+          link: "/api/volume/create-volume",
+        },
+        {
+          text: "端口转发",
+          link: "/api/port_forward/create-rule",
+        },
+        {
+          text: "元数据",
+          link: "/api/meta_data/get-meta-data",
+        },
+        {
+          text: "监控指标",
+          link: "/api/metrics/get-metrics",
+        },
+        {
+          text: "资源管理",
+          link: "/api/resource/request",
+        },
+        {
+          text: "同步管理",
+          link: "/api/sync/sync",
+        },
+      ],
     },
-      { text: "更新日志", link: "/changelog" },
+      { text: "更新日志", link: changelog[changelog.length - 1].link },
     ],
 
     sidebar: {
@@ -411,7 +442,7 @@ export default defineConfig({
       '/changelog': [
         {
           text: "更新日志",
-          link: "/changelog",
+          items: changelog,
         },
       ],
     },
