@@ -314,6 +314,98 @@ export default defineConfig({
               link: "/api/image/list-image",
             }
           ],
+        },
+        {
+          text: "存储卷",
+          collapsed: true,
+          items: [
+            {
+              text: "创建存储卷 CreateVolume",
+              link: "/api/volume/create-volume",
+            },
+            {
+              text: "删除存储卷 DeleteVolume",
+              link: "/api/volume/delete-volume",
+            },
+            {
+              text: "扩容存储卷 ExtendVolume",
+              link: "/api/volume/extend-volume",
+            },
+            {
+              text: "导入存储卷 ImportVolume",
+              link: "/api/volume/import-volume",
+            },
+            {
+              text: "查询存储卷列表 ListVolume",
+              link: "/api/volume/list-volume",
+            }
+          ],
+        },
+        {
+          text: "端口转发",
+          collapsed: true,
+          items: [
+            {
+              text: "创建端口转发 CreatePortForwardRule",
+              link: "/api/port_forward/create-rule",
+            },
+            {
+              text: "删除端口转发 DeletePortForwardRule",
+              link: "/api/port_forward/delete-by-source",
+            },
+            {
+              text: "清除服务器端口转发 ClearPortForwardRule",
+              link: "/api/port_forward/clear-by-server",
+            }
+          ],
+        },
+        {
+          text: "元数据",
+          collapsed: true,
+          items: [
+            {
+              text: "获取元数据 GetMetaData",
+              link: "/api/meta_data/get-meta-data",
+            },
+            {
+              text: "获取用户数据 GetUserData",
+              link: "/api/meta_data/get-user-data",
+            }
+          ],
+        },
+        {
+          text: "监控指标",
+          collapsed: true,
+          items: [
+            {
+              text: "获取监控指标 GetMetrics",
+              link: "/api/metrics/get-metrics",
+            }
+          ],
+        },
+        {
+          text: "资源管理",
+          collapsed: true,
+          items: [
+            {
+              text: "资源请求 ResourceRequest",
+              link: "/api/resource/request",
+            },
+            {
+              text: "获取网络接口 GetNetworkInterface",
+              link: "/api/resource/network-interface",
+            }
+          ],
+        },
+        {
+          text: "同步管理",
+          collapsed: true,
+          items: [
+            {
+              text: "同步资源 Sync",
+              link: "/api/sync/sync",
+            }
+          ],
         }
       ],
       '/changelog': [
