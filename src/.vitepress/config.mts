@@ -7,11 +7,11 @@ export default defineConfig({
   base: "/aries-docs/", // 添加 base 配置
   lastUpdated: true,
   head: [
-    ['link', { rel: 'icon', href: '/avatar.png' }],
+    ['link', { rel: 'icon', href: 'https://github.com/cloudstack-tech/aries-docs/blob/main/src/avatar.png?raw=true' }],
   ],
   themeConfig: {
     
-    logo: "/avatar.png",
+    logo: "https://github.com/cloudstack-tech/aries-docs/blob/main/src/avatar.png?raw=true",
 
     search: {
       provider: 'local'

@@ -6,9 +6,9 @@ hero:
   name: "白羊座 Aries"
   text: "新一代被控节点服务"
   tagline: 云栈互联提供的开箱即用的虚拟化平台被控服务
-  image:
-    src: /logo.png
-    alt: Aries
+  # image:
+  #   src: /logo.png
+  #   alt: Aries
   actions:
     - theme: brand
       text: 什么是 Aries？
