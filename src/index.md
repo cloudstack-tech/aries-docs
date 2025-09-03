@@ -15,7 +15,7 @@ hero:
       link: /guide/what-is-aries
     - theme: alt
       text: 部署文档
-      link: /guide/deploy 
+      link: /ops/deploy 
     - theme: alt
       text: API 文档
       link: /api
