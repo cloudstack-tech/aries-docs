@@ -8,6 +8,10 @@ export default defineConfig({
   lastUpdated: true,
   head: [
     ['link', { rel: 'icon', href: 'https://github.com/cloudstack-tech/aries-docs/blob/main/src/avatar.png?raw=true' }],
+    [
+      'link',
+      { href: 'https://fonts.googleapis.com/css2?family=Roboto&display=swap', rel: 'stylesheet' }
+    ],
   ],
   themeConfig: {
     
@@ -25,9 +29,9 @@ export default defineConfig({
     nav: [
       { text: "首页", link: "/" },
       { text: "指南", link: "/guide/what-is-aries" },
-      { text: "部署", link: "/deploy" },
-      { text: "CLI", link: "/cli" },
-      { text: "API", items: [
+      { text: "部署与运维", link: "/ops" },
+      { text: "CLI 命令", link: "/cli" },
+      { text: "API 接口", items: [
         {
           text: "云服务器",
           link: "/api/server/create-server",
@@ -134,30 +138,56 @@ export default defineConfig({
           ],
         },
       ],
-      '/deploy': [
+      '/ops/': [
         {
           text: "部署",
           items: [
             {
+              text: "介绍",
+              link: "/ops",
+            },
+            {
               text: "部署被控服务",
-              link: "/deploy",
+              link: "/ops/deploy",
             },
             {
               text: "制作模版镜像",
-              link: "/deploy/make-image",
+              link: "/ops/deploy/make-image",
             }
           ],
         },
         {
-          text: "监控",
+          text: "可观测",
           items: [
             {
+              text: "介绍",
+              link: "/ops/observability",
+            },
+            {
+              text: "被控主机监测",
+              link: "/ops/observability/controlled-host-monitor",
+            },
+            {
+              text: "服务器监控",
+              link: "/ops/observability/server-monitor",
+              items: [
+                {
+                  text: "Windows 服务器监测",
+                  link: "/ops/observability/server-monitor/windows",
+                },
+                {
+                  text: "Linux 服务器监测",
+                  link: "/ops/observability/server-monitor/linux",
+                },
+              ],
+            },
+            {
               text: "Prometheus 接入",
-              link: "/deploy/prometheus-integration",
+              link: "/ops/observability/integration/prometheus",
             },
             {
               text: "Grafana 接入",
-              link: "/deploy/grafana-integration",
+              link: "/ops/observability/integration/grafana",
             },
           ],
         },
@@ -165,8 +195,12 @@ export default defineConfig({
           text: "日志",
           items: [
             {
+              text: "介绍",
+              link: "/ops/logging",
+            },
+            {
               text: "日志服务",
-              link: "/deploy/log-service",
+              link: "/ops/logging/log-service",
             },
           ],
         }
@@ -182,6 +216,10 @@ export default defineConfig({
             {
               text: "CLI 安装",
               link: "/cli/install",
+            },
+            {
+              text: "示例",
+              link: "/cli/example",
             },
           ],
         },

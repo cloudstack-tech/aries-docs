@@ -43,7 +43,6 @@ list partition
 select partition 3
 delete partition override
 ```
-
 9. 删除临时 IP
 10. ~~初始化分盘(系统盘+数据盘)~~
 11. ~~安装默认应用(bandizip, vscode + 汉化, 百度网盘)~~
